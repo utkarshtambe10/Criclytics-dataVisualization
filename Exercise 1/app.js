@@ -8,6 +8,8 @@ const url = "https://public.tableau.com/views/IndianStatesDashboard/Dashboard1?:
 const vizContainer = document.getElementById('vizContainer');
 const options = {
     hideTabs: true,
+    width: 1400,
+    height: 720,
     onFirstInteraction: function () {
         workbook = viz.getWorkbook();
         activeSheet = workbook.getActiveSheet();
