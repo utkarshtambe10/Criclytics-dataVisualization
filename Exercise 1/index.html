@@ -1,0 +1,51 @@
+<html>
+
+<head>
+
+    <title>18CSE301J - Information Visualization Exercise 1</title>
+
+    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
+    <script type="text/javascript"></script>
+    <style>
+        #vizContainer {
+            text-align: center;
+        }
+
+        .vizButtons {
+            text-align: center;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <h1 style="font-family:'Times New Roman', Times, serif">18CSE301J - Information Visualization Exercise 1</h1>
+    <h3 style="font-family:'Times New Roman', Times, serif">Tableau Dashboard Visualization</h3>
+    <div class="vizButtons">
+        <button id="exportPDF"
+            style="background:#000000;color:white; font-family:'Times New Roman', Times, serif;cursor:pointer">Generate
+            PDF</button>
+        <button id="exportImage"
+            style="background:#000000;color:white; font-family:'Times New Roman', Times, serif;cursor:pointer">Generate
+            Image</button>
+    </div>
+    <br>
+
+    <div id="vizContainer"></div>
+    
+    <br>
+
+    <script src="./app.js"></script>
+
+</body>
+
+</html>
