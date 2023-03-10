@@ -1,138 +1,120 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-
-    <title>18CSE301J - Information Visualization Exercise 1</title>
-
-    <script type="text/javascript" src="https://public.tableau.com/javascripts/api/tableau-2.min.js"></script>
-    <script type="text/javascript"></script>
-    <style>
-        #vizContainer {
-            display: flex;
-            justify-content: center;
-        }
-
-        #d3Container {
-            display: flex;
-            justify-content: center;
-        }
-
-        .vizButtons {
-            text-align: center;
-        }
-
-        h1 {
-            text-align: center;
-        }
-
-        h3 {
-            text-align: center;
-        }
-
-        .outerSection {
-            border: 1px solid white;
-        }
-
-        .linkContainer {
-            text-align: center;
-        }
-    </style>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>18CSE301J - Information Visualization</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
-<body bgcolor="#000000">
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <a href="#">Main Project</a>
+            <a href="#">Exercise 1 <img src="new.gif" alt="new"></a>
+            <!--<a href="#">Services</a>-->
+            <!--<a href="#">Contact</a>-->
+        </nav>
+        <form method="get" action="http://www.google.com/search" target="_blank" class="search-bar">
+            <input type="hidden" name="sitesearch" value="" />
+            <input type="search" name="q" maxlength="255" placeholder="Search...">
+            <button class="submit"><i class="bx bx-search"></i></button>
+        </form>
+    </header>
 
-    <h1 style="font-family:'Times New Roman', Times, serif; color:#ffffff">18CSE301J - Information Visualization
-        Exercise 1</h1>
-    <div class="outerSection">
-        <h3 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color:#ffffff">Tableau Dashboard Visualization</h3>
-        <div class="vizButtons">
-            <button id="exportPDF"
-                style="background:#ffffff;color:black; font-family:'Times New Roman', Times, serif;cursor:pointer">Generate
-                PDF</button>
-            <button id="exportImage"
-                style="background:#ffffff;color:black; font-family:'Times New Roman', Times, serif;cursor:pointer">Generate
-                Image</button>
+    <div class="background"></div>
+
+    <div class="container">
+        <div class="content">
+            <h2 class="logo"><i class="bx bx-line-chart"></i> Information Visualization</h2>
+            <div class="text-sci">
+                <h2>Welcome!<br> <span>To Info. Viz. Repository.</span></h2>
+                <p>Information visualization is the process of representing data and information in a visual format such
+                    as charts, graphs, and maps to aid in understanding and analysis. It can be used to identify
+                    patterns, trends, and relationships in complex data sets.</p>
+
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/utkarshtambe-10"><i class="bx bxl-linkedin"></i></a>
+                    <a href="https://twitter.com/utkarshtambe_10"><i class="bx bxl-twitter"></i></a>
+                </div>
+            </div>
         </div>
 
-        <br>
-        <div class="linkContainer">
-            <a href="https://bit.ly/3ZNZQOs" target="_blank" rel="noopener noreferrer">Tableau Visualization Dataset</a>
-        </div>
-        <br>
-        <div id="vizContainer"></div>
+        <div class="logreg-box">
+            <div class="form-box login">
+                <form action="https://bit.ly/3mmJ0b8">
+                    <h2>Sign In</h2>
 
-        <br>
+                    <div class="input-box">
+                        <span class="icon"><i class="bx bxs-envelope"></i></span>
+                        <input type="email" required>
+                        <label for="#">SRMIST Email</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                        <input type="password" required>
+                        <label for="#">Password</label>
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label for="#">
+                            <input type="checkbox">Remember Me
+                        </label>
+                        <a href="#">Forgot Password</a>
+                    </div>
+                    
+                    <button type="submit" class="btn">Info. Viz. GitHub Repository</button>
+
+                    <div class="login-register">
+                        <p>Don't have an account? <a href="#" class="register-link">Sign Up</a></p>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-box register">
+                <form action="#">
+                    <h2>Sign Up</h2>
+
+                    <div class="input-box">
+                        <span class="icon"><i class="bx bxs-user"></i></span>
+                        <input type="text" required>
+                        <label for="#">Name</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class="bx bxs-envelope"></i></span>
+                        <input type="email" required>
+                        <label for="#">Email</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class="bx bxs-lock-alt"></i></span>
+                        <input type="password" required>
+                        <label for="#">Password</label>
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label for="#">
+                            <input type="checkbox">I agree to the terms & conditions
+                        </label>
+                    </div>
+
+                    <button type="submit" class="btn">Sign Up</button>
+
+                    <div class="login-register">
+                        <p>Already have an account? <a href="#" class="login-link">Sign In</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
     </div>
 
-    <br>
-
-    <hr>
-
-    <br>
-
-    <div class="outerSection">
-        <h3 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color:#ffffff">Visualization using D3.js</h3>
-        <div class="linkContainer">
-            <a href="https://bit.ly/3IZCzm3" target="_blank" rel="noopener noreferrer">Stack Overflow 2018 Developer
-                Survey Dataset</a>
-        </div>
-        <br>
-        <div id="d3Container">
-            <iframe
-                src="https://www.kaggle.com/embed/utkarshtambe/data-visualization-of-stack-overflow-using-d3-js?kernelSessionId=121266558"
-                height="720" style="margin: 0 auto; width: 1400; max-width: 1500" frameborder="0" scrolling="auto"
-                title="Data Visualization of Stack Overflow using D3.js"></iframe>
-        </div>
-        <br>
-    </div>
-
-    <br>
-
-    <div class="outerSection">
-        <h3 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color:#ffffff">Visualization using Python Libraries</h3>
-        <div class="linkContainer">
-            <a href="https://bit.ly/3IZCzm3" target="_blank" rel="noopener noreferrer">Stack Overflow 2018 Developer
-                Survey Dataset</a>
-        </div>
-        <br>
-        <div id="d3Container">
-            <iframe
-                src="https://www.kaggle.com/embed/utkarshtambe/data-visualization-of-stack-overflow-using-python?kernelSessionId=121266190"
-                height="720" style="margin: 0 auto; width: 1400; max-width: 1500;" frameborder="0" scrolling="auto"
-                title="Data Visualization of Stack Overflow using Python"></iframe>
-        </div>
-        <br>
-    </div>
-
-    <br>
-
-    <hr>
-
-    <br>
-
-    <div class="outerSection">
-        <h3 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color:#ffffff">Visualization using Gephi</h3>
-        <div class="linkContainer">
-            <a href="https://bit.ly/3ZNvkUZ" target="_blank" rel="noopener noreferrer">Flight Route Dataset</a>
-        </div>
-        <br>
-        <div id="d3Container">
-            <object data="gephi/Flight Routes Fruchterman Reingold Layout.pdf" width="1200" height="590" type=""></object>
-            
-            <object data="gephi/Flight Routes Noverlap Layout.pdf" width="1200" height="590" type=""></object>
-            
-            <object data="gephi/Flight Routes OpenOrd Layout.pdf" width="1200" height="590" type=""></object>
-            
-            <object data="gephi/Flight Routes Yifan Hu Layout.pdf" width="1200" height="590" type=""></object>
-        </div>
-        <br>
-    </div>
-
-    <br>
-
-    <script src="./app.js"></script>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
