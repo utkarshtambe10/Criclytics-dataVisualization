@@ -12,6 +12,11 @@
             justify-content: center;
         }
 
+        #d3Container {
+            display: flex;
+            justify-content: center;
+        }
+
         .vizButtons {
             text-align: center;
         }
@@ -23,25 +28,100 @@
         h3 {
             text-align: center;
         }
+
+        .outerSection {
+            border: 1px solid white;
+        }
+
+        .linkContainer {
+            text-align: center;
+        }
     </style>
 
 </head>
 
-<body>
+<body bgcolor="#000000">
 
-    <h1 style="font-family:'Times New Roman', Times, serif">18CSE301J - Information Visualization Exercise 1</h1>
-    <h3 style="font-family:'Times New Roman', Times, serif">Tableau Dashboard Visualization</h3>
-    <div class="vizButtons">
-        <button id="exportPDF"
-            style="background:#000000;color:white; font-family:'Times New Roman', Times, serif;cursor:pointer">Generate
-            PDF</button>
-        <button id="exportImage"
-            style="background:#000000;color:white; font-family:'Times New Roman', Times, serif;cursor:pointer">Generate
-            Image</button>
+    <h1 style="font-family:'Times New Roman', Times, serif; color:#ffffff">18CSE301J - Information Visualization
+        Exercise 1</h1>
+    <div class="outerSection">
+        <h3 style="font-family:'Times New Roman', Times, serif;color:#ffffff">Tableau Dashboard Visualization</h3>
+        <div class="vizButtons">
+            <button id="exportPDF"
+                style="background:#ffffff;color:black; font-family:'Times New Roman', Times, serif;cursor:pointer">Generate
+                PDF</button>
+            <button id="exportImage"
+                style="background:#ffffff;color:black; font-family:'Times New Roman', Times, serif;cursor:pointer">Generate
+                Image</button>
+        </div>
+
+        <br>
+        <div class="linkContainer">
+            <a href="https://bit.ly/3ZNZQOs" target="_blank" rel="noopener noreferrer">Tableau Visualization Dataset</a>
+        </div>
+        <br>
+        <div id="vizContainer"></div>
+
+        <br>
     </div>
+
     <br>
 
-    <div id="vizContainer"></div>
+    <hr>
+
+    <br>
+
+    <div class="outerSection">
+        <h3 style="font-family:'Times New Roman', Times, serif;color:#ffffff">Visualization using D3.js</h3>
+        <div class="linkContainer">
+            <a href="https://bit.ly/3IZCzm3" target="_blank" rel="noopener noreferrer">Stack Overflow 2018 Developer
+                Survey Dataset</a>
+        </div>
+        <br>
+        <div id="d3Container">
+            <iframe
+                src="https://www.kaggle.com/embed/utkarshtambe/data-visualization-of-stack-overflow-using-d3-js?kernelSessionId=121266558"
+                height="720" style="margin: 0 auto; width: 1400; max-width: 1500" frameborder="0" scrolling="auto"
+                title="Data Visualization of Stack Overflow using D3.js"></iframe>
+        </div>
+        <br>
+    </div>
+
+    <br>
+
+    <div class="outerSection">
+        <h3 style="font-family:'Times New Roman', Times, serif;color:#ffffff">Visualization using Python Libraries</h3>
+        <div class="linkContainer">
+            <a href="https://bit.ly/3IZCzm3" target="_blank" rel="noopener noreferrer">Stack Overflow 2018 Developer
+                Survey Dataset</a>
+        </div>
+        <br>
+        <div id="d3Container">
+            <iframe
+                src="https://www.kaggle.com/embed/utkarshtambe/data-visualization-of-stack-overflow-using-python?kernelSessionId=121266190"
+                height="720" style="margin: 0 auto; width: 1400; max-width: 1500;" frameborder="0" scrolling="auto"
+                title="Data Visualization of Stack Overflow using Python"></iframe>
+        </div>
+        <br>
+    </div>
+
+    <br>
+
+    <hr>
+
+    <br>
+
+    <div class="outerSection">
+        <h3 style="font-family:'Times New Roman', Times, serif;color:#ffffff">Visualization using Gephi</h3>
+        <div class="linkContainer">
+            <a href="https://bit.ly/3ZNvkUZ" target="_blank" rel="noopener noreferrer">Flight Route Dataset</a>
+        </div>
+        <br>
+        <div id="d3Container">
+            <img src="graph.png" alt="gephi" height="720" width="1400" max-width="1500">
+        </div>
+        <br>
+    </div>
 
     <br>
 
