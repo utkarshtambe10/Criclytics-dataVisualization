@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding-top: 70px;
+    /* Add some padding to the top of the content */
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    border-bottom: 2px solid black;
+}
+
+.brand-text {
+    font-weight: bold;
+    font-size: 30px;
+    margin-left: 5px;
+    /* Adjust the margin as needed */
+}
+
+.navbar-nav .nav-link:hover {
+    color: blue;
+    transition: color 0.5s ease;
+}
+
+.navbar-nav .nav-link:hover .bi-youtube {
+    color: red;
+    transition: color 0.5s ease;
+}
+
+.navbar-nav .nav-link:hover .bi-github {
+    color: black;
+    transition: color 0.5s ease;
+}
+
+#sidebarMenu {
+    background-color: black;
+    color: white;
+    min-height: 100vh;
+    /* Set the height of the navbar to 100% of the viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Add styling for the navbar links */
+#sidebarMenu a.nav-link {
+    color: white;
+    text-decoration: none;
+}
+
+/* Change the text color to blue during hovering */
+#sidebarMenu a.nav-link:hover {
+    color: blue;
+    transition: color 0.5s ease;
+}
+
+.nav-item {
+    margin-bottom: 20px;
+    /* Adjust the value to increase or decrease the vertical spacing */
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.nav-link svg {
+    margin-right: 8px;
+    /* Adjust the value to increase or decrease the spacing between the icon and text */
+}
+
+.nav-link.active {
+    color: red !important;
+    /* Add any other styles to highlight the active item */
+
+}
+
+.nav-link.active:hover {
+    color: blue !important;
+    transition: color 0.5s ease;
+}
+
+.powerbi-dashboard {
+    border: 2px solid black;
+    /* Add a black border */
+    border-radius: 10px;
+    /* Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* Add a subtle shadow */
+    width: 100%;
+    /* Adjust the width as needed */
+    height: 600px;
+    /* Adjust the height as needed */
+    padding-top: 30px;
+    /* Adjust the spacing value as desired */
+}
+
+.info p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+    text-align: justify;
+}
+
+.fig {
+    text-align: center;
+}
+
+.fig img {
+    max-width: 75%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 4px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card {
+    border: 1px solid #000000;
+}

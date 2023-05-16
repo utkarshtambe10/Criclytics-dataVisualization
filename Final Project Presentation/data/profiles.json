@@ -1,0 +1,13 @@
+{
+    "authors": {
+        "author": [
+            {
+                "id": 1,
+                "firstName": "Utkarsh Yashwant",
+                "lastName": "Tambe",
+                "photo": "../imgs/utkarsh.jpeg",
+                "email": "ty7171@srmist.edu.in"
+            }
+        ]
+    }
+}
